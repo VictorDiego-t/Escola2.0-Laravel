@@ -62,6 +62,16 @@ O banco de dados é o MySQL, e conta com as seguintes tabelas:
 
 As tabelas possuem os seguintes relacionamentos:
 
+Alunos  ────────────────►  Turmas
+  ↑                         ↑
+  | 1                    M |
+  |                        |
+Matriculas  ◄───────────────┘
+  ↑ 1                  M |
+  |                        |
+Chamadas  ◄─────────────────┘
+
+
 - A tabela Alunos tem um relacionamento de muitos para um com a tabela Turmas;
 - A tabela Alunos tem um relacionamento de um para muitos com a tabela Matriculas;
 - A tabela Turmas tem um relacionamento de um para muitos com a tabela Matriculas;
